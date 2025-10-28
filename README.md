@@ -59,3 +59,15 @@ Se trata de una aplicación pensada con **enfoque empresarial**, que simula cont
 ---
 
 ## 🧱 Estructura del proyecto
+
+## 📸 Capturas de pantalla
+
+| Vista | Descripción | Imagen |
+|-------|------------|--------|
+| 🖥️ Interfaz principal | Panel principal de la aplicación con botones CRUD | ![Interfaz Principal](images/screenshots/interfaz.png) |
+| 🧾 Registro de empleado | Ejemplo de registro de un empleado con datos generados por **Faker** y CURP aleatorio | ![Registro con Faker](images/screenshots/registro.png) |
+| 🧠 Generación de QR | Código QR generado automáticamente al registrar un empleado y guardado en la carpeta `images/qrs/` | ![QR generado](images/screenshots/qr_generado.png) |
+| 💾 Ejemplo de CURP | CURP generado aleatoriamente al registrar un empleado (solo a modo de ejemplo) | ![CURP Aleatorio](images/screenshots/curp.png) |
+
+> 🔹 Nota: Los CURP y datos son **generados aleatoriamente con Faker** para mostrar funcionalidad; no corresponden a personas reales.  
+> 🔹 La generación de QR puede adaptarse a incluir más información según las necesidades de la empresa.
