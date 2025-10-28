@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Volumes/ADATA HD720/Mis_Codigos_Python/LogoEmpleados.png</normaloff>../../../Volumes/ADATA HD720/Mis_Codigos_Python/LogoEmpleados.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #3C3C3E;
+    </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="txtTitulo">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Administración de QR's</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="lbID">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>ID:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="txtID">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+
+</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lbPaterno">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Paterno:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="txtPaterno">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lbMaterno">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Materno:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="txtMaterno">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="lbNombre">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Nombre:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="txtNombre">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="lbCorreo">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Correo:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="txtCorreo">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+</string>
+             </property>
+             <property name="maxLength">
+              <number>50</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="lbRol">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Rol:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QComboBox" name="cbRol">
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para contraste */
+    border: 1px solid #3A3A3C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+
+QComboBox:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;  /* ligeramente más claro al pasar el mouse */
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Investigación y Desarrollo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Marketing / Ventas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Recursos Humanos (RR.HH)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Finanzas / Contabilidad</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Operativo / Técnico</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Administrativo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Directivo / Ejecutivo</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="txtCelular">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="lbCelular">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Celular:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="lbCurp">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>CURP</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txtCURP">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+&quot;&quot;&quot;
+
+
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbQR">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+         </property>
+         <property name="text">
+          <string>QR:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtQR">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+}
+</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="btnRegistrar">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+           </property>
+           <property name="text">
+            <string>Registrar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnBuscar">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnActualizar">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+           </property>
+           <property name="text">
+            <string>Actualizar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEliminar">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+           </property>
+           <property name="text">
+            <string>Eliminar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCancelar">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+           </property>
+           <property name="text">
+            <string>Cancelar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
